@@ -2,8 +2,8 @@ CXX = g++
 
 CXXFLAGS = -Wall -Wextra -std=c++17 -Iinclude -I./
 
-SRCS1 = main.cpp HTTPServer.cpp
-SRCS2 = ./tests/test.cpp HTTPServer.cpp
+SRCS1 = src/main.cpp src/HTTPServer.cpp
+SRCS2 = tests/test.cpp src/HTTPServer.cpp
 
 OBJS1 = $(SRCS1:.cpp=.o)
 OBJS2 = $(SRCS2:.cpp=.o)
