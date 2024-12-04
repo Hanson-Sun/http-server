@@ -47,7 +47,7 @@ HTTPServer::~HTTPServer() {
 }
 
 int HTTPServer::start() {
-    std::cout << "Starting server at " << ip << ":" << port << " ..." << std::endl;
+    std::cout << "Starting server @ http://" << ip << ":" << port << std::endl;
     addr.sin_family = AF_INET;
     addr.sin_addr.s_addr = inet_addr(ip.c_str());
     addr.sin_port = htons(port);
